@@ -1,0 +1,19 @@
+{
+  "name": "cat-image-search",
+  "version": "1.0.0",
+  "description": "프로그래머스 과제관 - 고양이 사진 검색 사이트",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssogong/cat-image-search.git"
+  },
+  "author": "ssogong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssogong/cat-image-search/issues"
+  },
+  "homepage": "https://github.com/ssogong/cat-image-search#readme"
+}
