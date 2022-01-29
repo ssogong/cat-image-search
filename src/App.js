@@ -10,7 +10,12 @@ class App {
     this.searchInput = new SearchInput({
       $target,
       onSearch: keyword => {
-        api.fetchCats(keyword).then(({ data }) => this.setState(data));
+        console.log("onSearch: now searching " + keyword)
+        this.loading.setState(true);
+        api.fetchCats(keyword).then(({ data }) => {
+          this.setState(data);
+          this.loading.setState(false);
+        });
       }
     });
 
@@ -31,6 +36,10 @@ class App {
         visible: false,
         image: null
       }
+    });
+
+    this.loading = new Loading({
+      $target
     });
   }
 

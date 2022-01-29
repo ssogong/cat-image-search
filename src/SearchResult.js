@@ -1,5 +1,6 @@
 class SearchResult {
   $searchResult = null;
+  isLoading = false;
   data = null;
   onClick = null;
 

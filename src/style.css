@@ -1,10 +1,8 @@
 
-html {
+html, body {
+  height: 100%;
+  margin: 0;
   box-sizing: border-box;
-}
-
-body * {
-  font-family: Goyang;
 }
 
 *,
@@ -14,7 +12,9 @@ body * {
 }
 
 #App {
-  margin: 1.5em auto;
+  height: 100%;
+  padding: 1.5em;
+  margin: auto;
   max-width: 1200px;
   column-gap: 1.5em;
 }
@@ -76,6 +76,14 @@ body * {
 
 .ImageInfo .content-wrapper img {
   width: 100%;
+}
+
+#Loading {
+  height: 80%;
+  justify-content: center;
+}
+#Loading img {
+  width: 10em;
 }
 
 /* dark mode 처리
